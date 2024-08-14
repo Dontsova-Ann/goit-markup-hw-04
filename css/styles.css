@@ -89,19 +89,7 @@ margin: auto;
   text-transform: uppercase;
   color: #4d5ae5;
 }
-.logo-psevdo::after{
-  content: "";
-  width: 48px;
-  height: 4px;
-  background-color:#404BBF ;
-  display: block;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-bottom: auto;
- position: absolute;
- bottom: -1px; 
- border-radius: 2px; 
-}
+
 .logo-span {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -114,12 +102,7 @@ margin: auto;
 .menu {
   display: flex;
   gap: 40px;
-}
-.menu-item{
-  position: relative;
-  color: #404bbf; 
-  position: relative;
-  
+  align-items: center; 
 }
 
 .menu-link {
@@ -133,13 +116,31 @@ margin: auto;
   color: #2e2f42;
   transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1)  
 }
-.menu-link:hover,
-.menu-link:focus {
-  color: #404bbf;
+
+.menu-link.logo-psevdo{
+  position: relative; 
+    color: #404bbf;
 }
+
+.menu-link.logo-psevdo::after{
+   content: "";
+  width: 48px;
+  height: 4px;
+  background-color:#404BBF ;
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-bottom: auto;
+ position: absolute;
+ bottom: -1px; 
+ border-radius: 2px; 
+ width: 100%
+}
+
 .address {
   font-style: normal;
 }
+
 .menu-address {
   align-items: center;
   display: flex;
@@ -157,8 +158,10 @@ margin: auto;
   color: #434455;
   transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1)  
 }
+.menu-link:hover,
+.menu-link:focus,
 .address-link:hover,
-.address-link:focus {
+.address-link:focus{
   color: #404bbf;
 }
 /* #endregion header */
@@ -263,7 +266,7 @@ background-color: #f4f4fd
   padding-bottom: 120px;
 }
 .container-team{
-  padding: 32px 0; 
+ 
 }
 
 .title {
@@ -325,6 +328,10 @@ background-color: #f4f4fd
   width: 264px;
   height: 40px; 
 }
+.icons-social{
+  width: 40px;
+   height: 40px;
+}
 .icons-list{
 display: flex;
 gap: 24px;
@@ -359,7 +366,6 @@ align-items: center;
   padding-bottom: 120px;
 }
 .container-portfolio {
-
   border-top: none;
   
 }
