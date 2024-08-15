@@ -318,7 +318,15 @@ background-color: #f4f4fd
   text-align: center;
   color: #434455;
 }
-
+/*.icons-container{
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  margin-top: 8px;
+  margin-bottom: 32px;
+  width: 264px;
+  height: 40px; 
+}*/
 .icons-social{
   width: 40px;
    height: 40px;
